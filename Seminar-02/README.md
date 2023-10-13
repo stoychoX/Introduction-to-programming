@@ -455,3 +455,6 @@ int main()
 	}
 }
 ```
+
+## Допълнителни задачи
+https://github.com/stoychoX/UP-FMI/blob/main/tasks-2022/week02/tasks.md
