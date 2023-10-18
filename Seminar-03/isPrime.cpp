@@ -9,18 +9,25 @@ int main()
     cin >> number;
 
     bool isPrime = true;
-    double squareOfNumber = sqrt(number);
-
-    for (int i = 2; i <= squareOfNumber; i++)
+    if(number > 1)
     {
-        if(number % i == 0)
+        double squareOfNumber = sqrt(number);
+
+        for (int i = 2; i <= squareOfNumber; i++)
         {
-            isPrime = false;
-            break;
+            if(number % i == 0)
+            {
+                isPrime = false;
+                break;
+            }
         }
     }
+    else
+    {
+        isPrime = false;
+    }
 
-    if(isPrime) 
+    if(isPrime)
     { 
         cout << "The number is prime" << endl; 
     }
