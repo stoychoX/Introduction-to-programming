@@ -8,12 +8,12 @@
 Със знанията до момента можем да решим тази задача. Решението би изглеждало по следния начин:
 ```cpp
 #include <iostream>
-#include <cmath>
+#include <cmathtr
 
 using namespace std;
 
 int main()
-{
+{t4wetertyreye5rgtswrgwrf
     unsigned first  = 0;
     unsigned second = 0;
 
