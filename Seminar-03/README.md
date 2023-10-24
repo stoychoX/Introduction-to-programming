@@ -103,6 +103,8 @@ using namespace std;
 int main()
 {
     char symbol;
+    cout << "Enter a symbol: " << endl;
+    cin >> q;
 
     while(symbol != 'q')
     {
