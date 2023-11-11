@@ -6,6 +6,8 @@ using namespace std;
 // 2.1 Ако има 4 бика край.
 // 2.2 Ако няма 4 бика покажи му колко бика и колко крави има и се върни на 2.
 
+const unsigned DIGITS_COUNT = 4;
+
 unsigned digitsCount(unsigned number)
 {
     if(number == 0) { return 1; }
@@ -71,7 +73,7 @@ bool hasDuplicates(unsigned number)
 
 bool validNumber(unsigned number)
 {
-    return digitsCount(number) == 4 && !hasDuplicates(number);
+    return digitsCount(number) == DIGITS_COUNT && !hasDuplicates(number);
 }
 
 unsigned getInput()
