@@ -17,6 +17,8 @@ unsigned reverseNumber(unsigned numberToReverse)
 
 unsigned countDigits(unsigned number)
 {
+	if(number == 0)
+		return 1;
 	unsigned counter = 0;
 
 	while (number != 0)
