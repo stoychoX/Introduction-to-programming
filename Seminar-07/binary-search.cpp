@@ -28,6 +28,5 @@ int binarySearch(const int arr[], unsigned length, int elem)
 
 int main()
 {
-    int arr[] = {1};
-    std::cout << binarySearch(arr, 1, 0);
+    
 }
