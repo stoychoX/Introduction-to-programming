@@ -5,7 +5,7 @@ int binarySearch(const int arr[], unsigned length, int elem)
     int left = 0;
     int rigth = length - 1;
 
-    while (rigth - left > 0)
+    while (rigth - left >= 0)
     {
         int mid = left + (rigth - left) / 2;
 
@@ -28,5 +28,6 @@ int binarySearch(const int arr[], unsigned length, int elem)
 
 int main()
 {
-    
+    int arr[] = {1};
+    std::cout << binarySearch(arr, 1, 0);
 }
