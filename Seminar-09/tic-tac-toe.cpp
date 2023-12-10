@@ -1,8 +1,8 @@
 #include <iostream>
 
-constexpr size_t BOARD_SIZE      = 4;
+constexpr size_t BOARD_SIZE      = 3;
 constexpr size_t PLAYERS_COUNT   = 2;
-const size_t WINNING_LINE_LENGTH = 4;
+const size_t WINNING_LINE_LENGTH = 3;
 const int EMPTY_CELL = -1;
 
 void initPlayerSymbols(char playerSymbols[PLAYERS_COUNT])
@@ -132,7 +132,7 @@ void play(int board[BOARD_SIZE][BOARD_SIZE], const char playerSymbols[PLAYERS_CO
     unsigned x = 0;
     unsigned y = 0;
     unsigned movesCount = 0;
-    
+
     int winningPlayer = -1;
 
     while(true)
@@ -143,7 +143,7 @@ void play(int board[BOARD_SIZE][BOARD_SIZE], const char playerSymbols[PLAYERS_CO
 
         bool cellsLeft = !(movesCount == (BOARD_SIZE * BOARD_SIZE));
 
-        if(isWinningMove(board, x, y) || cellsLeft)
+        if(isWinningMove(board, x, y) || !cellsLeft)
         {
             winningPlayer = cellsLeft ? playerPlaying : -1;
             break;
