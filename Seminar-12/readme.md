@@ -73,18 +73,3 @@ int main()
 Вход: "    This     is example     text     "
 
 Изход: "This is example text"
-
-## Задача шеста
-Да се реализира функция ```char** split(char* text, char symbol, unsigned& dictSize);``` която разделя текста по даден разделител.
-
-Пример: 
-
-Вход:
-
-split("Hello,this,is,text", ',', size);
-
-Изход:
-
-{"Hello", "this", "is", "text"}, size = 4.
-
-hint: функцията връща масив от низове и size e техния брой.
